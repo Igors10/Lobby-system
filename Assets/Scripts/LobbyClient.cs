@@ -69,7 +69,6 @@ public class LobbyClient : NetworkBehaviour   // Look into registering the clien
         ConnectionScript.connection_manager.nextID++;
         client.lobby_id.Value = id;
     }
-
     private void OnNicknameChanged(string previous, string next, bool asServer)
     {
         LobbyManager.instance.Refresh(lobby_id.Value);
